@@ -1,0 +1,105 @@
+.hrac-page{
+   .article__gallery{
+      margin-top: 58px;
+   }
+   .article__table{
+      margin-top: 60px;
+   }
+   .article .hp-rozcestnik__topclanek{
+      position: relative;
+   }
+   .dots{
+      position: absolute;
+      display: flex;
+      right: 23px;
+      top: 21px;
+      z-index: 100;
+      li+li{
+         margin-left: 5px;
+      }
+      li{
+         a{
+            width: 16px;
+            height: 16px;
+            background-color:    #878495;
+            &::before{
+               display: none;
+            }
+         }
+         .active{
+            background-color: $orange;
+         }
+      }
+   }
+   &__info{
+      position: absolute;
+      bottom: 44px;
+      padding: 0 80px 0 56px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      &--right{
+         margin-bottom: -5px;
+         display: flex;
+         li{
+            display: block;
+            margin-left: 40px;
+            span{
+               font-size: 1rem;
+               color: #fff;
+            }
+            p{
+               font-size: 0.875rem;
+               color: $orange;
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+}
+
+
+@media(max-width:1240px){
+   .hrac-page{
+      .hp-rozcestnik__topclanek a::before{
+         display: none;
+      }
+      .hrac-page__info--right li span,
+      .article .hp-rozcestnik__topclanek h1{
+         color: #2C2C2C;
+      }
+   }
+   .hrac-page__info{
+      bottom: 0;
+      padding: 0 30px;
+      position: relative;
+    
+   }
+}
+@media(max-width:880px){
+   .hrac-page__info--left{
+      margin-bottom: 8px;
+   }
+   .hrac-page__info--right li:first-child{
+      margin-left: 0;
+   }
+   .hrac-page__info{
+      display: block;
+   }
+}
+@media(max-width:480px){
+   .hrac-page__info--right{
+      flex-wrap: wrap;
+      margin-left: -16px;
+      margin-right: -16px;
+      li{
+         margin: 0;
+         padding: 0 16px;
+         margin-bottom: 16px;
+      }
+   }
+    .hrac-page .article .hp-rozcestnik__topclanek h1{
+      font-size: 2rem;
+   }
+}

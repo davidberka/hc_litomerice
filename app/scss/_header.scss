@@ -1,0 +1,304 @@
+#hockey_bar_esports{
+   background-color: #212121;
+   height: 39px;
+   img{
+      width: auto;
+   }
+}
+.header{
+   margin-top: 19px;
+   border-top: 6px solid $orange;
+   background-color: $blue;
+   &__inner{
+   
+      height: 75px;
+      align-items: center;
+      padding-left: 151px;
+      position: relative;
+      display: flex;
+     
+   }
+   &__logo{
+      position: absolute;
+      left: -3px;
+      top: -15px;
+      width: 112px;
+      height: 112px;
+      transition: all .3s;
+      z-index: 99;
+      &:hover{
+         transform: scale(1.1);
+      }
+      img{
+         object-fit: none;
+      }
+   }
+   &__social{
+      display: flex;
+      align-items: center;
+      height: 34px;
+      margin-top: -5px;
+      li{
+         height: 100%;
+         display: block;
+         margin-left: 2px;
+         &:last-child{
+            margin-left: 8px;
+         }
+      }
+      a{
+         height: 100%;
+         display: flex;
+         align-items: center;
+         
+         &:hover{
+            svg{
+               transform: scale(1.2);
+            }
+         }
+         svg{
+            display: block;
+            transition: all .3s;
+        
+         }
+      }
+   }
+}
+
+.nav{
+   margin-top:3px;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   &__menu{
+      display: flex;
+      
+      
+   }
+   &__link{
+      transition: all 0.4s;
+      font-family: revolution-gothic, sans-serif;
+      font-weight: 800;
+      font-size: 1.3125rem;
+      text-transform: uppercase;
+      color: #fff;
+   }
+   &__item{
+      position: relative;
+      z-index: 888;
+      cursor: pointer;
+      display: block;
+      & + &{
+         margin-left: 15px;
+         padding-left: 32.5px;
+         &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 7px;
+            background-repeat: no-repeat;
+            background-image: url('../images/svg/vlna.svg');
+            width: 19px;
+            height: 9px;
+            background-size: cover;
+         }
+      }
+      &:hover {
+        .dropdown-menu {
+          transition: all 0.8s;
+          display: block;
+          z-index: 10000;
+        }
+      }
+   }
+}
+.dropdown-menu {
+   display: none;
+   position: absolute;
+   z-index: 888;
+   width: 240px;
+   padding: 24px 16px 0 16px;
+   background-color: $blue;
+   &__list {
+     width: 100%;
+   }
+ }
+ 
+ .dropdown-menu__link {
+   padding: 10px 0px;
+   color: #fff;
+   font-size: 1rem;
+   width: 100%;
+   line-height: 1.5;
+   border-bottom: 1px solid rgba($orange, 0.5);
+   text-transform: uppercase;
+   &:hover {
+     text-decoration: underline;
+   }
+ }
+
+
+/// burger
+.navbar__menu {
+   border-radius: 10px;
+   position: relative;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+   transition: all 0.5s ease-in-out;
+ }
+ .navbar__menu-btn {
+   width: 30px;
+   height: 4px;
+   background: $orange;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(255, 103, 47, 0.2);
+   transition: all 0.5s ease-in-out;
+ 
+   &::before,
+   &::after {
+     content: '';
+     position: absolute;
+     width: 30px;
+     height: 4px;
+     background: $orange;
+     border-radius: 5px;
+     box-shadow: 0 2px 5px rgba(255, 103, 47, 0.2);
+     transition: all 0.5s ease-in-out;
+   }
+   &::before {
+     transform: translateY(-10px);
+   }
+   &::after {
+     transform: translateY(10px);
+   }
+ }
+ .navbar__menu.open .navbar__menu-btn {
+   transform: translateX(-50px);
+   background: transparent;
+   box-shadow: none;
+   &::before {
+     transform: rotate(45deg) translate(35px, -35px);
+   }
+   &::after {
+     transform: rotate(-45deg) translate(35px, 35px);
+   }
+ }
+
+ @media(max-width:1239px){
+   .header{
+      .container{
+         padding: 0;
+      }
+      &__inner{
+         padding: 0;
+      }
+      &__logo{
+         left: 15px;
+      }
+   }
+   .navbar__menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  .nav{
+     display: none;
+     position: absolute;
+     z-index: 1000;
+     top: 72px;
+     background-color: $blue;
+     border-top: 3px solid $orange;
+     max-width: 320px;
+     right: 0;
+     .dropdown-menu{
+        padding: 8px 16px 0 16px;
+     }
+     &__menu{
+        padding: 8px 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-bottom: 3px solid $orange;
+        
+     }
+     &__item + &__item{
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 15px;
+        &::before{
+           display: none;
+        }
+     }
+     &__item:hover .dropdown-menu {
+      height: 0;
+      position: static;
+      transition: all 0s;
+      display: none;
+    }
+    &__item.active {
+      .dropdown-menu {
+        height: 100%;
+        display: block;
+      }
+    }
+  }
+  .header__social{
+     padding: 12px 0;
+     height: auto;
+     justify-content: center;
+  }
+ }
+
+ @media(max-width:980px){
+   .header{
+      margin-top: 0;
+      border-top: 2px solid $orange;
+     
+      &__inner{
+         height: 60px;
+      }
+   }
+   .header__logo{
+      width: 90px;
+      height: 90px;
+      z-index: 9990000;
+      top: 0;
+      img{
+         object-fit: cover;
+      }
+   }
+    .head{
+       display: none;
+    }
+    .nav{
+       border-top: none;
+       top: 57px;
+    }
+ }
+ @media(max-width:690px){
+
+   #hockey_bar_esports{
+      display: none;
+   }
+ }
+ @media(max-width:540px){
+   .navbar__menu{
+      margin-right: 5px;
+   }
+   .header__logo{
+      width: 75px;
+      height: 75px;
+      left: 5px;
+   }
+   .nav{
+      max-width: 100%;
+   }
+   .nav__item,
+   .dropdown-menu{
+      width: 100%;
+   }
+ }

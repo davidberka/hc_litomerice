@@ -1,0 +1,40 @@
+.partners{
+   display: flex;
+   align-items: center;
+   height: 100%;
+   padding: 60px 20px;
+   width: 100%;
+   .slick-list{
+      width: 100% !important;
+    }
+    .slick-slide{
+      width: 100% !important;
+    }
+    .slick-track{
+      width: 100% !important;
+      display: flex;
+      justify-self: flex-start;
+    }
+   &__item{
+      flex: 0 0 14.28%;
+      max-width: 14.28%;
+      padding: 0 40px;
+      a{
+         height: 70px;
+         width: 100%;
+         width: 117px;
+         img{
+            object-fit: contain;
+         }
+      }
+   }
+}
+
+@media(max-width: 1440px){
+   .partners{
+      .partners__item{
+         flex: 0 0 20%;
+         max-width: 20%;
+      }
+   }
+}

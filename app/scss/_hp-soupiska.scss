@@ -1,0 +1,267 @@
+.hp-soupiska{
+   display: flex;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.100313);
+   &__tabs{
+      color: #fff;
+   }
+   &__tab{
+      display: flex;
+      .tab{
+         max-width: 50%;
+         flex: 0 50%;
+         text-align: center;
+         padding: 17px 0;
+         cursor: pointer;
+         &.active{
+            background-color: $dark-blue;
+         }
+      }
+   }
+   .tab__content{
+      display: none;
+      padding-bottom: 24px;
+      .tabulka__teams{
+         padding: 0 10px;
+      }
+      &.tab-active{
+         display: block;
+      }
+      .hp-soupiska__link{
+         color: #fff;
+      }
+   }
+   
+   &__col{
+      max-width: 460px;
+      width: 100%;
+      h3{
+         text-transform: uppercase;
+         margin-bottom: 15px;
+      }
+   }
+   &__tabs{
+      background-color: $blue;
+   }
+   &__zapasy{
+      max-width: 500px;
+      background-color: #29282E;
+      color: #fff;
+      width: 100%;
+      padding: 20px 30px;
+      &-link{
+         color: #fff;
+         display: block;
+         text-align: center;
+         text-transform: uppercase;
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+      &-box{
+         display: flex;
+         
+         position: relative;
+         h3{
+            max-width: 80px;
+            text-transform: uppercase;
+            position: absolute;
+            left: 0;
+            top: 0;
+         }
+      }
+   }
+   &__clanky{
+      background-color: #fff;
+      padding: 20px 30px;
+   }
+   &__aktuality{
+      padding-top: 10px;
+      margin-bottom: 19px;
+      h3{
+         margin-bottom: 10px;
+      }
+      p{
+         border-bottom: 1px solid #EBE5E5;
+         padding-bottom: 16px;
+      
+      }
+   }
+   &__link{
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+      color: $blue;
+      &:hover{
+         text-decoration: underline;
+      }
+   }
+}
+.clanek{
+   margin-bottom: 1rem;
+   &:hover{
+      h3{
+         text-decoration: underline;
+      }
+   }
+   &__info{
+      margin-left: 16px;
+      flex: 0 0 68%;
+      max-width: 68%;
+      h3{
+         color:  #2C2C2C;
+      }
+   }
+   &__link{
+      display: flex;
+   }
+   &__img{
+      flex: 0 0 32%;
+      max-width: 32%;
+      height: 101px;
+      border-radius: 5px;
+      img{
+         object-fit: cover;
+         border-radius: 5px;
+      }
+   }
+   h3{
+      text-transform: initial;
+   }
+}
+.date{
+   display: inline-block;
+   text-transform: uppercase;
+   border-radius: 4px;
+   background-color: $orange;
+   padding: 6px 14px 6px 12px;
+   font-style: normal;
+   -webkit-font-kerning: normal;
+   font-kerning: normal;
+   font-weight: 800;
+   font-size: 1rem;
+   color: #fff;
+   margin-bottom: 12px;
+}
+.zapas{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   padding-top: 5px;
+   padding-bottom: 26px;
+   border-bottom: 1px solid #3F3D47;
+   margin-bottom: 20px;
+   &__team{
+      display: flex;
+      align-items: center;
+   }
+   &__logo{
+      width: 59px;
+      height: 59px;
+      img{
+         object-fit: cover;
+      }
+   }
+   &__top{
+      text-align: center;
+      margin-bottom: 21px;
+      p{
+         margin-bottom: 1px;
+      }
+   }
+   &__datum{
+      font-size: 1.5rem;
+   }
+   &__links{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .date{
+         display: block;
+         margin: 0 4px;
+      }
+   }
+   &__info{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      p{
+         color: #878495;
+         font-family: revolution-gothic, sans-serif;
+         font-weight: 700;
+         padding: 0 16px;
+         margin-bottom: 0;
+      }
+      h1{
+         margin: 0 23px;
+      }
+   }
+}
+
+@media(max-width:1240px){
+   .hp-soupiska__col,
+   .hp-soupiska__zapasy{
+      max-width: 70%;
+   }
+   .hp-soupiska{
+      flex-direction: column;
+      align-items: center;
+   }
+}
+@media(max-width:840px){
+   .hp-soupiska__col,
+   .hp-soupiska__zapasy{
+      max-width: 100%;
+   }
+}
+
+@media(max-width:480px){
+   .clanek__link{
+      flex-direction: column;
+   }
+   .clanek__img{
+      max-width: 100%;
+      flex: 100%;
+      margin-bottom: 10px;
+   }
+   .clanek__info{
+      margin-left: 0;
+      max-width: 100%;
+      flex: 100%;
+   }
+   .hp-soupiska__zapasy,
+   .hp-soupiska__clanky{
+      padding: 20px;
+   }
+   .zapas__team{
+      flex-direction: column;
+      &:first-child{
+         flex-direction: column-reverse;
+      }
+   }
+   .zapas__logo{
+      margin-bottom: 10px;
+      width: 45px;
+      height: 45px;
+   }
+   .zapas__links .date{
+      margin-bottom: 12px;
+   }
+   .zapas__info h1{
+      margin: 0 10px;
+   }
+   h1{
+      font-size: 2.4rem;
+   }
+   .hp-soupiska__zapasy-box{
+      display: block;
+   }
+   .hp-soupiska__zapasy-box h3{
+      position: relative;
+      margin-bottom: 10px;
+      max-width: 100%;
+      text-align: center;
+   }
+}

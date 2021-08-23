@@ -1,0 +1,38 @@
+.timer{
+   display: flex;
+   margin-bottom: 26px;
+   max-width: 180px;
+   &__label{
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 125%;
+      text-transform: uppercase;
+      color:  #878495;
+      text-transform: uppercase;
+   }
+   &__value{
+      line-height: 125%;
+      font-size:   24.64px;
+      display: block;
+      font-weight: 400;
+   }
+   &__item{
+      text-align: center;
+      margin-right: 13px;
+      padding-right: 13px;
+      position: relative;
+      &::after{
+         content: ':';
+         position: absolute;
+         right: 0;
+         top: 6px;
+         width: 2px;
+         height: 1px;
+      }
+    
+   }
+}
+#timer-seconds::after{
+   display: none;
+}

@@ -1,0 +1,210 @@
+.zapasy-page {
+  padding: 55px 0;
+  h1 {
+    text-transform: uppercase;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .select__redirect {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.zapasy-page__header {
+  margin-bottom: 32px;
+}
+
+.liga-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 48px;
+    
+  a {
+    padding: 0 12px 16px;
+    margin: 0 20px;
+    font-size: 20px;
+    color: black;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &.active {
+        border-bottom: 4px solid $orange;
+      }
+    }
+}
+
+.zapasy-page__category {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+
+  a {
+    padding-bottom: 2px;
+    margin: 0 16px;
+    font-size: 18px;
+    color: $orange;
+    border-bottom: 4px solid #ffd3c0;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-bottom: 4px solid red;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &.active {
+        border-bottom: 4px solid $orange;
+      }
+    }
+}
+
+
+
+.zapasy-page__row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+
+  &:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+}
+
+.zapasy-page__type-date {
+  flex: 0.15;
+  text-align: center;
+}
+
+.zapasy-page__type {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.zapasy-page__date {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.zapasy-page__logos {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 55px;
+    width: auto;
+
+    &:first-child {
+      margin-right: 8px;
+    }
+  }
+}
+
+.zapasy-page__teams {
+  flex: 0.25;
+
+  h3 {
+    font-size: 32px;
+  }
+}
+
+.zapasy-page__score {
+  flex: 0.075;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 32px;
+  }
+}
+
+.zapasy-page__links {
+  flex: 0.225;
+  display: flex;
+  align-items: center;
+
+  a {
+    height: 25px;
+    margin-right: 24px;
+    width: auto;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .zapasy-page__row {
+    display: grid;
+    grid-template-columns: 2.2fr 1.5fr 2fr 0.2fr;
+    grid-template-rows: 1fr 0.75fr;
+  }
+  .zapasy-page__links {
+    grid-column: 1/5;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .select__redirect {
+    max-width: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .zapasy-page__row {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 16px 32px;
+  }
+
+  .zapasy-page__type-date {
+    grid-row: 1/2;
+    grid-column: 1/5;
+  }
+
+  .zapasy-page__logos, .zapasy-page__teams, .zapasy-page__score {
+    grid-row: 2/3;
+  }
+
+  .zapasy-page__logos {
+    justify-content: flex-start;
+  }
+
+  .zapasy-page__teams {
+    text-align: center;
+  }
+
+  .zapasy-page__score {
+    text-align: end;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .zapasy-page__row {
+    padding: 16px;
+  }
+  .zapasy-page__teams h3 {
+    font-size: 24px;
+  }
+  .zapasy-page__type-date div {
+    font-size: 18px;
+  }
+  .zapasy-page__logos img {
+    height: 45px;
+  }
+  .zapasy-page__links a img {
+    height: 20px;
+  }
+}

@@ -1,0 +1,22 @@
+.tabulka {
+   padding: 58px 50px;
+   h1{
+      margin-bottom: 32px;
+   }
+}
+
+.tabulka_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabulka_container {
+    overflow-x: auto;
+}
+
+@media(max-width:880px){
+   .tabulka {
+      padding: 50px 25px;
+   }
+}

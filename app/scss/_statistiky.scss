@@ -1,0 +1,29 @@
+.statistiky_table-container {
+    margin-bottom: 32px;
+    overflow-x: auto;
+}
+
+.table_img {
+    height: 50px;
+    width: 50px;
+}
+
+.table_num-name {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+    h3 {
+        font-size: 14px;
+        margin-bottom: 0;
+        
+        &:first-child {
+            background-color: $orange;
+            color: white;
+            width: max-content;
+            padding: 6px;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+    }
+}

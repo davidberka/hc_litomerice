@@ -134,7 +134,7 @@
   align-items: center;
 
   a {
-    height: 25px;
+    height: 22px;
     margin-right: 24px;
     width: auto;
 
@@ -142,13 +142,38 @@
       height: 100%;
     }
   }
+
+  .zapasy-page__button {
+    padding: 24px 32px;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid $orange;
+    color: $orange;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    img {
+      margin-left: 20px;
+      width: auto;
+      height: 12px;
+    }
+
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .zapasy-page__row {
     display: grid;
     grid-template-columns: 2.2fr 1.5fr 2fr 0.2fr;
-    grid-template-rows: 1fr 0.75fr;
+    grid-template-rows: 1fr 1fr;
   }
   .zapasy-page__links {
     grid-column: 1/5;
@@ -192,8 +217,15 @@
 }
 
 @media only screen and (max-width: 425px) {
+  .zapasy-page__header {
+    font-size: 38.4px;
+  }
+  .liga-row {
+    margin-bottom: 32px;
+  }
   .zapasy-page__row {
     padding: 16px;
+    grid-row-gap: 8px;
   }
   .zapasy-page__teams h3 {
     font-size: 24px;
@@ -204,7 +236,14 @@
   .zapasy-page__logos img {
     height: 45px;
   }
-  .zapasy-page__links a img {
-    height: 20px;
+  .zapasy-page__links {
+    a img {
+      height: 20px;
+    }
+
+    .zapasy-page__button {
+      font-size: 18px;
+      padding: 20px;
+    }
   }
 }

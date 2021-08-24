@@ -323,115 +323,174 @@
                </select>
             </div>
             <div class="liga-row">
-               <a href="#">CHANCE liga</a>
-               <a class="active" href="#">Přípravné zápasy</a>
+               <a class="league active" href="#">CHANCE liga</a>
+               <a class="pre-season" href="#">Přípravné zápasy</a>
             </div>
-            <div class="zapasy-page__category">
-               <a href="#">Pouze doma</a>
-               <a href="#">Pouze venku</a>
-               <a class="active" href="#">Vše</a>
+            <div id="filter" class="zapasy-page__category">
+               <a class="home" href="#">Pouze doma</a>
+               <a class="away" href="#">Pouze venku</a>
+               <a class="all active" href="#">Vše</a>
             </div>
-            <div class="zapasy-page__row">
-               <div class="zapasy-page__type-date">
-                  <div class="zapasy-page__type">
-                     přípravné utkání
+            <div id="zapasy">
+               <div class="zapasy_container league">
+                  <div class="zapasy-page__row away">
+                     <div class="zapasy-page__type-date">
+                        <div class="zapasy-page__type">
+                           přípravné utkání
+                        </div>
+                        <div class="zapasy-page__date">
+                          5. srpna 2021, 17:30
+                        </div>
+                     </div>
+                     <div class="zapasy-page__logos">
+                        <img src="images/logo.svg" alt="">
+                        <img src="images/logo.svg" alt="">
+                     </div>
+                     <div class="zapasy-page__teams">
+                        <h3>Slavie</h3>
+                        <h3 class="win">Litoměřice</h3>
+                     </div>
+                     <div class="zapasy-page__score">
+                        <span>2</span>
+                        <span class="win">3</span>
+                     </div>
+                     <div class="zapasy-page__links">
+                        <a class="zapasy-page__link" href="/zapas.html">
+                           <img src="images/svg/report.svg" alt="">
+                        </a>
+                        <a class="zapasy-page__link" href="/zapas.html">
+                           <img src="images/svg/foto.svg" alt="">
+                        </a>
+                        <a class="zapasy-page__link" href="/zapas.html">
+                           <img src="images/svg/ohlasy.svg" alt="">
+                        </a>
+                        <a class="zapasy-page__link" href="/zapas.html">
+                           <img src="images/svg/vieo-ohlasy.svg" alt="">
+                        </a>
+                        <a class="zapasy-page__link" href="https://www.hokej.cz/tv/hokejka/video/20202767">
+                           <img src="images/svg/sestrih.svg" alt="">
+                        </a>
+                     </div>
                   </div>
-                  <div class="zapasy-page__date">
-                    5. srpna 2021, 17:30
+   
+                  <div class="zapasy-page__row home">
+                     <div class="zapasy-page__type-date">
+                        <div class="zapasy-page__type">
+                           přípravné utkání
+                        </div>
+                        <div class="zapasy-page__date">
+                        5. srpna 2021, 17:30
+                        </div>
+                     </div>
+                     <div class="zapasy-page__logos">
+                        <img src="images/logo.svg" alt="">
+                        <img src="images/logo.svg" alt="">
+                     </div>
+                     <div class="zapasy-page__teams">
+                        <h3 class="">Litoměřice</h3>
+                        <h3>Slavie</h3>
+                     </div>
+                     <div class="zapasy-page__score">
+                     </div>
+                     <div class="zapasy-page__links">
+                        <a class="zapasy-page__button" href='/vstupenky.html'>Vstupenky <img src="images/svg/arrow-button.svg" alt=""></a>
+                     </div>
                   </div>
-               </div>
-               <div class="zapasy-page__logos">
-                  <img src="images/logo.svg" alt="">
-                  <img src="images/logo.svg" alt="">
-               </div>
-               <div class="zapasy-page__teams">
-                  <h3>Slavie</h3>
-                  <h3 class="win">Litoměřice</h3>
-               </div>
-               <div class="zapasy-page__score">
-                  <span>2</span>
-                  <span class="win">3</span>
-               </div>
-               <div class="zapasy-page__links">
-                  <a class="zapasy-page__link" href="#">
-                     <img src="images/svg/report.svg" alt="">
-                  </a>
-                  <a class="zapasy-page__link" href="#">
-                     <img src="images/svg/foto.svg" alt="">
-                  </a>
-                  <a class="zapasy-page__link" href="#">
-                     <img src="images/svg/ohlasy.svg" alt="">
-                  </a>
-                  <a class="zapasy-page__link" href="#">
-                     <img src="images/svg/vieo-ohlasy.svg" alt="">
-                  </a>
-                  <a class="zapasy-page__link" href="#">
-                     <img src="images/svg/sestrih.svg" alt="">
-                  </a>
-               </div>
-            </div>
 
-            <div class="zapasy-page__row">
-               <div class="zapasy-page__type-date">
-                  <div class="zapasy-page__type">
-                     přípravné utkání
-                  </div>
-                  <div class="zapasy-page__date">
-                    5. srpna 2021, 17:30
-                  </div>
-               </div>
-               <div class="zapasy-page__logos">
-                  <img src="images/logo.svg" alt="">
-                  <img src="images/logo.svg" alt="">
-               </div>
-               <div class="zapasy-page__teams">
-                  <h3 class="loser">Slavie</h3>
-                  <h3>Litoměřice</h3>
-               </div>
-               <div class="zapasy-page__score">
-                  <span class="loser">2</span>
-                  <span>3</span>
-               </div>
-               <div class="zapasy-page__links">
-                  <a class="zapasy-page__link" href="#">
-                     <img src="images/svg/report.svg" alt="">
-                  </a>
-                  <a class="zapasy-page__link" href="#">
-                     <img src="images/svg/foto.svg" alt="">
-                  </a>
-                  <a class="zapasy-page__link" href="#">
-                     <img src="images/svg/ohlasy.svg" alt="">
-                  </a>
-                  <a class="zapasy-page__link" href="#">
-                     <img src="images/svg/vieo-ohlasy.svg" alt="">
-                  </a>
-                  <a class="zapasy-page__link" href="#">
-                     <img src="images/svg/sestrih.svg" alt="">
-                  </a>
-               </div>
-            </div>
-
-            <div class="zapasy-page__row">
-               <div class="zapasy-page__type-date">
-                  <div class="zapasy-page__type">
-                     přípravné utkání
-                  </div>
-                  <div class="zapasy-page__date">
-                    5. srpna 2021, 17:30
+                  <div class="zapasy-page__row home">
+                     <div class="zapasy-page__type-date">
+                        <div class="zapasy-page__type">
+                           přípravné utkání
+                        </div>
+                        <div class="zapasy-page__date">
+                        5. srpna 2021, 17:30
+                        </div>
+                     </div>
+                     <div class="zapasy-page__logos">
+                        <img src="images/logo.svg" alt="">
+                        <img src="images/logo.svg" alt="">
+                     </div>
+                     <div class="zapasy-page__teams">
+                        <h3 class=""">Litoměřice</h3>
+                        <h3>Slavie</h3>
+                     </div>
+                     <div class="zapasy-page__score">
+                     </div>
+                     <div class="zapasy-page__links">
+                        <a class="zapasy-page__button" href='/vstupenky.html'>Vstupenky <img src="images/svg/arrow-button.svg" alt=""></a>
+                     </div>
                   </div>
                </div>
-               <div class="zapasy-page__logos">
-                  <img src="images/logo.svg" alt="">
-                  <img src="images/logo.svg" alt="">
-               </div>
-               <div class="zapasy-page__teams">
-                  <h3>Slavie</h3>
-                  <h3 class="win">Litoměřice</h3>
-               </div>
-               <div class="zapasy-page__score">
-               </div>
-               <div class="zapasy-page__links">
-                  <a class="zapasy-page__button">Vstupenky <img src="images/svg/arrow-button.svg" alt=""></a>
+               <div class="zapasy_container pre-season">
+                  <div class="zapasy-page__row away">
+                     <div class="zapasy-page__type-date">
+                        <div class="zapasy-page__type">
+                           přípravné utkání
+                        </div>
+                        <div class="zapasy-page__date">
+                        5. srpna 2021, 17:30
+                        </div>
+                     </div>
+                     <div class="zapasy-page__logos">
+                        <img src="images/logo.svg" alt="">
+                        <img src="images/logo.svg" alt="">
+                     </div>
+                     <div class="zapasy-page__teams">
+                        <h3>Slavie</h3>
+                        <h3 class="">Litoměřice</h3>
+                     </div>
+                     <div class="zapasy-page__score">
+                     </div>
+                     <div class="zapasy-page__links">
+                        <a class="zapasy-page__button" href='/vstupenky.html'>Vstupenky <img src="images/svg/arrow-button.svg" alt=""></a>
+                     </div>
+                  </div>
+                  <div class="zapasy-page__row away">
+                     <div class="zapasy-page__type-date">
+                        <div class="zapasy-page__type">
+                           přípravné utkání
+                        </div>
+                        <div class="zapasy-page__date">
+                        5. srpna 2021, 17:30
+                        </div>
+                     </div>
+                     <div class="zapasy-page__logos">
+                        <img src="images/logo.svg" alt="">
+                        <img src="images/logo.svg" alt="">
+                     </div>
+                     <div class="zapasy-page__teams">
+                        <h3>Slavie</h3>
+                        <h3 class="">Litoměřice</h3>
+                     </div>
+                     <div class="zapasy-page__score">
+                     </div>
+                     <div class="zapasy-page__links">
+                        <a class="zapasy-page__button" href='/vstupenky.html'>Vstupenky <img src="images/svg/arrow-button.svg" alt=""></a>
+                     </div>
+                  </div>
+                  <div class="zapasy-page__row home">
+                     <div class="zapasy-page__type-date">
+                        <div class="zapasy-page__type">
+                           přípravné utkání
+                        </div>
+                        <div class="zapasy-page__date">
+                        5. srpna 2021, 17:30
+                        </div>
+                     </div>
+                     <div class="zapasy-page__logos">
+                        <img src="images/logo.svg" alt="">
+                        <img src="images/logo.svg" alt="">
+                     </div>
+                     <div class="zapasy-page__teams">
+                        <h3 class="">Litoměřice</h3>
+                        <h3>Slavie</h3>
+                     </div>
+                     <div class="zapasy-page__score">
+                     </div>
+                     <div class="zapasy-page__links">
+                        <a class="zapasy-page__button" href='/vstupenky.html'>Vstupenky <img src="images/svg/arrow-button.svg" alt=""></a>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>

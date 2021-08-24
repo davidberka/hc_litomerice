@@ -314,12 +314,12 @@
                <h1>
                   zápasy
                </h1>
-               <select class="select__redirect" name="categorie" id="categorie">
+               <select class="select__redirect" onchange="location = this.value;" name="categorie" id="categorie">
                   <option>Categorie</option>
-                  <option value="">2020/2021</option>
-                  <option value="">2019/2020</option>
-                  <option value="">2018/2019</option>
-                  <option value="">2017/2018</option>
+                  <option value="?sezona=2020">2020/2021</option>
+                  <option value="?sezona=2019">2019/2020</option>
+                  <option value="?sezona=2018">2018/2019</option>
+                  <option value="?sezona=2017">2017/2018</option>
                </select>
             </div>
             <div class="liga-row">

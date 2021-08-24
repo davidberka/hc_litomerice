@@ -316,20 +316,20 @@
                </h1>
                <select class="select__redirect" name="categorie" id="categorie">
                   <option>Categorie</option>
-               <option value="">2020/2021</option>
-               <option value="">2019/2020</option>
-               <option value="">2018/2019</option>
-               <option value="">2017/2018</option>
+                  <option value="">2020/2021</option>
+                  <option value="">2019/2020</option>
+                  <option value="">2018/2019</option>
+                  <option value="">2017/2018</option>
                </select>
             </div>
             <div class="liga-row">
-               <a class="league active" href="#">CHANCE liga</a>
-               <a class="pre-season" href="#">Přípravné zápasy</a>
+               <a class="league" data-target="league" href="?sezona=2022prip&kategorie=MUZ">CHANCE liga</a>
+               <a class="pre-season" data-target="pre-season" href="?sezona=2022&kategorie=MUZ">Přípravné zápasy</a>
             </div>
             <div id="filter" class="zapasy-page__category">
-               <a class="home" href="#">Pouze doma</a>
-               <a class="away" href="#">Pouze venku</a>
-               <a class="all active" href="#">Vše</a>
+               <a class="home" data-target="home" href="?sezona=2022&kategorie=MUZ&typ=doma">Pouze doma</a>
+               <a class="away" data-target="away" href="?sezona=2022&kategorie=MUZ&typ=venku">Pouze venku</a>
+               <a class="all" data-target="all" href="?sezona=2022&kategorie=MUZ&typ=vse">Vše</a>
             </div>
             <div id="zapasy">
                <div class="zapasy_container league">

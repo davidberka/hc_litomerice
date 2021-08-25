@@ -186,8 +186,8 @@ $('.liga-row a').each(function () {
 $('.kalendar_months').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  nextArrow: '<img class="carousel-arrow carousel-next" src="images/svg/arrow-right.svg" alt="">',
-  prevArrow: '<img class="carousel-arrow carousel-prev" src="images/svg/arrow-right.svg" alt="">'
+  nextArrow: '<img class="carousel-arrow carousel-next" src="images/svg/arrow-right.svg">',
+  prevArrow: '<img class="carousel-arrow carousel-prev" src="images/svg/arrow-right.svg">',
 });
 
 /// score

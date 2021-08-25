@@ -12,6 +12,7 @@
     .carousel-arrow {
         height: 1rem;   
         cursor: pointer;
+        z-index: 10;
 
         &.carousel-prev {
             transform: rotate(180deg) translateY(50%);

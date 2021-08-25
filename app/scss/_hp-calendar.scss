@@ -1,0 +1,94 @@
+.kalendar {
+    padding-bottom: 1.3rem;
+}
+
+.kalendar_table-header {
+    padding: 0 1.5rem 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #432fa5;
+
+    .carousel-arrow {
+        height: 1rem;   
+        cursor: pointer;
+
+        &.carousel-prev {
+            transform: rotate(180deg) translateY(50%);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: fit-content;
+        }
+
+        &.carousel-next {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: fit-content;
+        }
+    }
+}
+
+.kalendar_months {
+    width: 100%;
+
+    h4 {
+        text-align: center;
+    }
+}
+
+.kalendar_table {
+    margin-bottom: 1.3rem;
+
+    table {
+        thead {
+            height: 40px;
+
+            th {
+                text-align: center;
+                border: none;
+                width: 70px;
+            } 
+        }
+        td {
+            border: 1px solid #432fa5;
+            width: 70px;
+            height: 78px;
+            padding: 0;
+            position: relative;
+
+            &:last-child {
+                border-right: none;
+            }
+            &:first-child {
+                border-left: none;
+            }
+
+            img {
+                position: absolute;
+                left: 50%;
+                top: 15%;
+                transform: translateX(-50%);
+                cursor: pointer;
+            }
+            span {
+                height: 100%;
+                width: 100%;
+                padding: 0.5rem;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end; 
+
+                &.dif-month {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+.kalendar_tab__content {
+    padding-bottom: 0 !important;
+}

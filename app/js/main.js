@@ -182,6 +182,14 @@ $('.liga-row a').each(function () {
   })
 })
 
+// hp - kalendar carousel months
+$('.kalendar_months').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  nextArrow: '<img class="carousel-arrow carousel-next" src="images/svg/arrow-right.svg" alt="">',
+  prevArrow: '<img class="carousel-arrow carousel-prev" src="images/svg/arrow-right.svg" alt="">'
+});
+
 /// score
 var n=$("#scoreboard_carousel").data("initialslider");null==n&&(n=1),$("#scoreboard_carousel").slick({infinite:!1,arrows:!0,dots:!1,autoplay:!1,slidesToShow:5,slidesToScroll:1,centerMode:true,swipeToSlide:!0,initialSlide:n-1,responsive:[{breakpoint:1650,settings:{slidesToShow:4,slidesToScroll:1}},{breakpoint:1440,settings:{slidesToShow:3,slidesToScroll:1}},{breakpoint:1100,settings:{slidesToShow:2,slidesToScroll:1}},{breakpoint:750,settings:{slidesToShow:1,slidesToScroll:1,dots:!1}},{breakpoint:440,settings:{slidesToShow:1,slidesToScroll:1,dots:!1,arrows:!0,centerMode:!1}}]});
 var _gallery_loading = false;

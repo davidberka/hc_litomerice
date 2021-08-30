@@ -19,7 +19,7 @@
    }
    .tab__content{
       display: none;
-      padding-bottom: 24px;
+      padding-bottom: 60px;
       .tabulka__teams{
          padding: 0 10px;
       }
@@ -86,6 +86,14 @@
       
       }
    }
+   &__link_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0 24px;
+   }
+
    &__link{
       text-align: center;
       display: block;
@@ -176,6 +184,8 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      gap: 8px 0;
+
       .date{
          display: block;
          margin: 0 4px;

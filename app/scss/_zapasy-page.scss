@@ -1,35 +1,37 @@
 .zapasy-page {
-  padding: 55px 0;
+  background-color: #F4F4F4;
   h1 {
     text-transform: uppercase;
   }
-  &__header {
+  &__header, &__subheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 24px 0;
+    margin-bottom: 32px;
+
     .select__redirect {
       margin-bottom: 0;
     }
   }
 }
 
-.zapasy-page__header {
-  margin-bottom: 32px;
+.main__content.zapasy {
+  padding: 58px 50px;
 }
 
 .liga-row {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 48px;
     
   a {
-    padding: 0 12px 16px;
+    padding: 0 0px 16px;
     margin: 0 20px;
     font-size: 20px;
     color: black;
 
-    &:last-child {
-      margin-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
     
     &.active {
@@ -40,8 +42,6 @@
 
 .zapasy-page__category {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 16px;
 
   a {
     padding-bottom: 2px;
@@ -50,6 +50,10 @@
     color: $orange;
     border-bottom: 4px solid #ffd3c0;
     transition: all 0.2s ease;
+
+    &.home {
+      margin-left: 0;
+    }
 
     &:hover {
       border-bottom: 4px solid red;
@@ -65,15 +69,13 @@
     }
 }
 
-
-
 .zapasy-page__row {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 16px;
+  padding: 12px;
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background-color: #f5f5f5;
   }
 }
@@ -84,13 +86,13 @@
 }
 
 .zapasy-page__type {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 8px;
 }
 
 .zapasy-page__date {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -101,7 +103,7 @@
   align-items: center;
 
   img {
-    height: 55px;
+    height: 40px;
     width: auto;
 
     &:first-child {
@@ -114,7 +116,7 @@
   flex: 0.25;
 
   h3 {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
@@ -124,7 +126,7 @@
   flex-direction: column;
 
   span {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
@@ -134,24 +136,23 @@
   align-items: center;
 
   a {
-    height: 22px;
     margin-right: 24px;
-    width: auto;
 
     img {
-      height: 100%;
+      width: 20px;
+      height: 20px;
     }
   }
 
   .zapasy-page__button {
-    padding: 24px 32px;
-    border-radius: 12px;
+    padding: 8px 16px;
+    border-radius: 8px;
     background-color: white;
     border: 1px solid $orange;
     color: $orange;
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     cursor: pointer;
     transition: box-shadow 0.2s ease;
@@ -163,7 +164,7 @@
     img {
       margin-left: 20px;
       width: auto;
-      height: 12px;
+      height: 10px;
     }
 
   }
@@ -185,6 +186,12 @@
   .select__redirect {
     max-width: 200px !important;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .main__content.zapasy {
+    padding: 58px 24px;
+  } 
 }
 
 @media only screen and (max-width: 650px) {
@@ -220,8 +227,13 @@
   .zapasy-page__header {
     font-size: 38.4px;
   }
+  .zapasy-page__header, .zapasy-page__subheader {
+    margin-bottom: 20px;
+  }
   .liga-row {
-    margin-bottom: 32px;
+    a {
+      padding-bottom: 8px;
+    }
   }
   .zapasy-page__row {
     padding: 16px;
@@ -243,7 +255,7 @@
 
     .zapasy-page__button {
       font-size: 18px;
-      padding: 20px;
+      padding: 12px;
     }
   }
 }

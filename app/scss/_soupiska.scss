@@ -3,6 +3,53 @@
    h1{
       margin-bottom: 32px;
    }
+
+   #tablesoupiska {
+      h2 {
+         margin-bottom: 1rem;
+      }
+      table {
+         margin-bottom: 2rem;
+      }
+   }
+
+   .soupiska_content {
+      display: none;
+
+      &.tab-active{
+         display: block;
+      }
+   }
+   .soupiska__tabs {
+      display: flex;
+      margin-bottom: 1.5rem;
+      width: max-content;
+      border-radius: .5rem;
+
+      a {
+         padding-bottom: 2px;
+         text-transform: uppercase;
+         margin: 0 16px;
+         font-size: 18px;
+         color: $orange;
+         border-bottom: 4px solid #ffd3c0;
+         transition: all 0.2s ease;
+
+
+
+         &:hover {
+            border-bottom: 4px solid red;
+         }
+
+         &:first-child {
+            margin-left: 0;
+         }
+         
+         &.active {
+            border-bottom: 4px solid $orange;
+            }
+      }
+   }
    h3{
       text-transform: uppercase;
       margin-bottom: 12px;

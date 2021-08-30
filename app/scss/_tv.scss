@@ -129,6 +129,9 @@
    margin-bottom: 50px;
    max-width: 1366px;
    &__box {
+     text-align: center;
+     width: 85%;
+     margin: 0 auto;
      margin-bottom: 20px;
    }
    h2 {
@@ -240,5 +243,8 @@
    }
    .video__item {
      padding: 0;
+   }
+   .main-video__box {
+     width: 100%;
    }
  }

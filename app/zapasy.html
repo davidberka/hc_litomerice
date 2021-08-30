@@ -307,9 +307,10 @@
       </div>
    </header>
 
-   <section class="zapasy-page">
-      <div class="container">
-         <div class="zapasy-page__inner">
+   <div class="zapasy-page">
+    <div class="container">
+      <div class="main__inner">
+         <div class="main__content zapasy">
             <div class="zapasy-page__header">
                <h1>
                   zápasy
@@ -322,14 +323,16 @@
                   <option value="?sezona=2017">2017/2018</option>
                </select>
             </div>
-            <div class="liga-row">
-               <a class="league" data-target="league" href="?sezona=2022&kategorie=MUZ">CHANCE liga</a>
-               <a class="pre-season" data-target="pre-season" href="?sezona=2022prip&kategorie=MUZ">Přípravné zápasy</a>
-            </div>
-            <div id="filter" class="zapasy-page__category">
-               <a class="home" data-target="home" href="?sezona=2022&kategorie=MUZ&typ=doma">Pouze doma</a>
-               <a class="away" data-target="away" href="?sezona=2022&kategorie=MUZ&typ=venku">Pouze venku</a>
-               <a class="all" data-target="all" href="?sezona=2022&kategorie=MUZ&typ=vse">Vše</a>
+            <div class="zapasy-page__subheader">
+               <div class="liga-row">
+                  <a class="league" data-target="league" href="?sezona=2022&kategorie=MUZ">CHANCE liga</a>
+                  <a class="pre-season" data-target="pre-season" href="?sezona=2022prip&kategorie=MUZ">Přípravné zápasy</a>
+               </div>
+               <div id="filter" class="zapasy-page__category">
+                  <a class="home" data-target="home" href="?sezona=2022&kategorie=MUZ&typ=doma">Pouze doma</a>
+                  <a class="away" data-target="away" href="?sezona=2022&kategorie=MUZ&typ=venku">Pouze venku</a>
+                  <a class="all" data-target="all" href="?sezona=2022&kategorie=MUZ&typ=vse">Vše</a>
+               </div>
             </div>
             <div id="zapasy">
                <div class="zapasy_container league">
@@ -403,7 +406,7 @@
                            přípravné utkání
                         </div>
                         <div class="zapasy-page__date">
-                        5. srpna 2021, 17:30
+                        5. listopadu 2021, 21:30
                         </div>
                      </div>
                      <div class="zapasy-page__logos">
@@ -421,14 +424,13 @@
                      </div>
                   </div>
                </div>
-               <div class="zapasy_container pre-season">
-                  <div class="zapasy-page__row away">
+               <div class="zapasy-page__row away">
                      <div class="zapasy-page__type-date">
                         <div class="zapasy-page__type">
                            přípravné utkání
                         </div>
                         <div class="zapasy-page__date">
-                        5. srpna 2021, 17:30
+                        5. ledna 2021, 17:30
                         </div>
                      </div>
                      <div class="zapasy-page__logos">
@@ -474,7 +476,7 @@
                            přípravné utkání
                         </div>
                         <div class="zapasy-page__date">
-                        5. srpna 2021, 17:30
+                        5. července 2021, 17:30
                         </div>
                      </div>
                      <div class="zapasy-page__logos">
@@ -491,11 +493,201 @@
                         <a class="zapasy-page__button" href='vstupenky.html'>Vstupenky <img src="images/svg/arrow-button.svg" alt=""></a>
                      </div>
                   </div>
-               </div>
             </div>
          </div>
+   <aside class="aside">
+            <h3>submenu</h3>
+            <ul class="aside__list">
+               <li>
+                  <a class="active" href="#">
+                     Všechny zápasy
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Chance LIGA
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Liga mistrů 
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     MOL Cup 
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Přípravné zápasy 
+                  </a>
+               </li>
+            </ul>
+            <div class="hp-soupiska__clanky">
+               <h3>další články</h3>
+               <div class="clanek">
+                  <a class="clanek__link" href="article.html">
+                     <div class="clanek__img">
+                        <img src="images/content/top-1.jpg" alt="">
+                     </div>
+                     <div class="clanek__info">
+                        <div class="date">5.1.</div>
+                        <h3>Po šesti výhrách bez bodu! Stadion na Jihlavu nestačil</h3>
+                     </div>
+                  </a>
+               </div>
+               <div class="clanek">
+                  <a class="clanek__link" href="article.html">
+                     <div class="clanek__img">
+                        <img src="images/content/top-2.jpg" alt="">
+                     </div>
+                     <div class="clanek__info">
+                        <div class="date">4.1.</div>
+                        <h3>Do Kalich Areny míří Slavia.
+                           <br>
+                           Napraví Stadion jihlavský nezdar?</h3>
+                     </div>
+                  </a>
+               </div>
+               <div class="hp-soupiska__aktuality">
+                  <h3>Aktuality</h3>
+                  <p>
+                     <span><b>Včera</b></span>
+                        - V den zápasu se Slavií oslavil osmnácté narozeniny a jako dárek si věnoval nejen vítězství a tři body, ale také první branku v dospělém hokeji.
+                  </p>
+                  <p>
+                     <span><b>Včera</b></span>
+                     - Po závěrečné siréně tak měl čerstvě osmnáctiletý <b>Petr Moravec</b> spoustu důvodů k radosti. „Bylo to podařené utkání. Hráli jsme dobře <a href="#">týmově a takticky</a>. Padlo hodně gólů. Ale musíme víc zabrat do obrany, abychom nedostávali tolik branek. Moje trefa?
+                  </p>
+               
+               </div>
+               <a class="hp-soupiska__link" href="#">archiv aktualit</a>
+            </div>
+            <div class="tabulka">
+               <h3>
+                  tabulka
+               </h3>
+               <div class="tabulka__teams">
+                  <table>
+                     <tr>
+                        <th>#</th>
+                        <th></th>
+                        <th>Tým</th>
+                        <th>Z</th>
+                        <th>Skóre</th>
+                        <th>b</th>
+                     </tr>
+                     <tr>
+                        <td>1</td>
+                        <td>
+                           <img src="images/teams/1.png" alt="">
+                        </td>
+                        <td>Rytíři Kladno</td>
+                        <td>24</td>
+                        <td>49:28</td>
+                        <td>66</td>
+                     </tr>
+                     <tr>
+                        <td>2</td>
+                        <td>
+                           <img src="images/teams/2.png" alt="">
+                        </td>
+                        <td>HC ZUBR Přerov	</td>
+                        <td>24</td>
+                        <td>49:28</td>
+                        <td>66</td>
+                     </tr>
+                     <tr class="litomerice">
+                        <td>3</td>
+                        <td>
+                           <img src="images/teams/3.png" alt="">
+                        </td>
+                        <td>HC Stadion Litoměřice</td>
+                        <td>24</td>
+                        <td>49:28</td>
+                        <td>62</td>
+                     </tr>
+                     <tr>
+                        <td>4</td>
+                        <td>
+                           <img src="images/teams/4.png" alt="">
+                        </td>
+                        <td>HC Dukla Jihlava</td>
+                        <td>24</td>
+                        <td>49:28</td>
+                        <td>58</td>
+                     </tr>
+                     <tr>
+                        <td>5</td>
+                        <td>
+                           <img src="images/teams/5.png" alt="">
+                        </td>
+                        <td>SK Horácká Slavia Třebíč	</td>
+                        <td>24</td>
+                        <td>49:28</td>
+                        <td>54</td>
+                     </tr>
+                     <tr>
+                        <td>6</td>
+                        <td>
+                           <img src="images/teams/6.png" alt="">
+                        </td>
+                        <td>HC RT TORAX Poruba</td>
+                        <td>24</td>
+                        <td>49:28</td>
+                        <td>54</td>
+                     </tr>
+                     <tr>
+                        <td>7</td>
+                        <td>
+                           <img src="images/teams/7.png" alt="">
+                        </td>
+                        <td>VHK ROBE Vsetín	</td>
+                        <td>24</td>
+                        <td>49:28</td>
+                        <td>55</td>
+                     </tr>
+                     <tr>
+                        <td>8</td>
+                        <td>
+                           <img src="images/teams/8.png" alt="">
+                        </td>
+                        <td>HC Baník Sokolov</td>
+                        <td>24</td>
+                        <td>49:28</td>
+                        <td>55</td>
+                     </tr>
+                     <tr>
+                        <td>9</td>
+                        <td>
+                           <img src="images/teams/9.png" alt="">
+                        </td>
+                        <td>LHK Jestřábi Prostějov</td>
+                        <td>24</td>
+                        <td>49:28</td>
+                        <td>33</td>
+                     </tr>
+                     <tr>
+                        <td>10</td>
+                        <td>
+                           <img src="images/teams/10.png" alt="">
+                        </td>
+                        <td>HC Slavia Praha</td>
+                        <td>23</td>
+                        <td>49:28</td>
+                        <td>22</td>
+                     </tr>
+                  </table>
+               </div>
+               <a class="hp-soupiska__link" href="tabulka.html">
+                  kompletní tabulka ligy
+               </a>
+            </div>
+         </aside>
       </div>
    </section>
+   </div>
 
 
 <footer class="footer">

@@ -39,7 +39,17 @@ $(function () {
       
       ],
     });
-  
+    
+  $('.soupiska__tab').on('click', function() {
+    var id = $(this).attr('data-id');
+    $('.soupiska__wrapper').find('.soupiska_content').removeClass('tab-active').hide();
+    $('.soupiska__wrapper .soupiska__tabs').find('.soupiska__tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id)
+    .addClass('tab-active')
+    .fadeIn();
+    return false;
+  });
     
    $('.navbar__menu').on('click', function () {
       $('.nav').slideToggle();

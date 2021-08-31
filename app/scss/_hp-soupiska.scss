@@ -3,6 +3,8 @@
    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.100313);
    &__tabs{
       color: #fff;
+      background-color: $blue;
+      height: 100%;
    }
    &__tab{
       display: flex;
@@ -19,7 +21,6 @@
    }
    .tab__content{
       display: none;
-      padding-bottom: 60px;
       .tabulka__teams{
          padding: 0 10px;
       }
@@ -39,9 +40,7 @@
          margin-bottom: 15px;
       }
    }
-   &__tabs{
-      background-color: $blue;
-   }
+
    &__zapasy{
       max-width: 500px;
       background-color: #29282E;
@@ -218,6 +217,9 @@
    .hp-soupiska{
       flex-direction: column;
       align-items: center;
+   }
+   .tab__content {
+      padding-bottom: 16px;
    }
 }
 @media(max-width:840px){

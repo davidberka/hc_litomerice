@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "jquery-form-styler": "^2.0.2",
+    "lightbox2": "^2.11.3",
     "magnific-popup": "^1.1.0"
   }
 }

@@ -239,3 +239,17 @@ $('a[data-gallery]').click(function () {
 
   return false;
 });
+
+//  trancate text
+window.addEventListener('load', () => {
+  const paragraphs = document.querySelectorAll('.archiv_row-content p');
+
+  paragraphs.forEach(paragraph => {
+    if (paragraph.textContent.length > 175) {
+      const truncated = paragraph.textContent.substr(0, 175) + '...';
+      return paragraph.textContent = truncated;
+    } else {
+      return paragraph.textContent;
+    }
+  })
+})

@@ -299,3 +299,31 @@ table{
      color: #fff;
    }
  }
+
+ .cover_bg {
+   position: fixed;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 1000;
+   display: grid;
+   place-items: center;
+
+   .cover {
+      position: relative;
+      
+      .close_cover {
+         position: absolute;
+         top: -1rem;
+         right: -1rem;
+         border-radius: 50%;
+         width: 2rem;
+         height: 2rem;
+         border: 3px solid black;
+         background-color: white;
+         cursor: pointer;
+      }
+
+   }
+ }

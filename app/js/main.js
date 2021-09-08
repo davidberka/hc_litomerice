@@ -72,6 +72,13 @@ $(function () {
    }
  });
 
+// cover
+const closeCover_btn = document.querySelector('.close_cover');
+ 
+closeCover_btn.addEventListener('click', () => {
+  document.querySelector('.cover_bg').style.display = 'none';
+})
+
 //  vstupenky btn
 // const btns = document.querySelectorAll('.zapasy-page__button');
 

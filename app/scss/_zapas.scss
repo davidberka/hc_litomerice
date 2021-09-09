@@ -309,6 +309,43 @@
       margin-bottom: 32px;
    }
 }
+.aside_result {
+   margin-bottom: 2rem;
+
+   p {
+      font-weight: 600;
+      text-align: center;
+   }
+
+   & > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+         width: auto;
+         height: 100px;
+         object-fit: contain;
+      }
+      
+      & > div {
+         text-align: center;
+
+         h1 {
+            font-size: 4rem;
+            margin-bottom: .5rem;
+         }
+
+         span {
+            color:rgba(28, 30, 31, 0.5);
+         }
+
+         p, p > span {
+            margin-top: 1rem;
+            color: black;
+         }
+      }
+   }
+}
 @media(max-width:1440px){
    .report-page{
      .article{
